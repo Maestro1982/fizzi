@@ -58,11 +58,13 @@ export default function Scene({}: Props) {
       },
     });
 
-    introTl
-      .from(canOneGroupRef.current.position, { y: -5, x: 1 }, 0)
-      .from(canOneGroupRef.current.rotation, { z: 3 }, 0)
-      .from(canTwoGroupRef.current.position, { y: 5, x: 1 }, 0)
-      .from(canTwoGroupRef.current.rotation, { z: 3 }, 0);
+    if (window.scrollY < 20) {
+      introTl
+        .from(canOneGroupRef.current.position, { y: -5, x: 1 }, 0)
+        .from(canOneGroupRef.current.rotation, { z: 3 }, 0)
+        .from(canTwoGroupRef.current.position, { y: 5, x: 1 }, 0)
+        .from(canTwoGroupRef.current.rotation, { z: 3 }, 0);
+    }
 
     const scrollTl = gsap.timeline({
       defaults: {
@@ -81,7 +83,7 @@ export default function Scene({}: Props) {
       .to(groupRef.current?.rotation, { y: Math.PI * 2 })
 
       // Can one - blackcherry
-      .to(canOneRef.current.position, { x: -2, y: -0.7, z: -2 }, 0)
+      .to(canOneRef.current.position, { x: -0.2, y: -0.7, z: -2 }, 0)
       .to(canOneRef.current.rotation, { z: 0.3 }, 0)
 
       // Can two - lemonlime
@@ -98,7 +100,14 @@ export default function Scene({}: Props) {
 
       // Can five - watermelon
       .to(canFiveRef.current.position, { x: 0.3, y: 0.5, z: -0.5 }, 0)
-      .to(canFiveRef.current.rotation, { z: -0.25 }, 0);
+      .to(canFiveRef.current.rotation, { z: -0.25 }, 0)
+
+      // Shift everything to the right on a certain time
+      .to(
+        groupRef.current.position,
+        { x: 1, duration: 3, ease: "sine.inOut" },
+        1.3,
+      );
   });
 
   return (
