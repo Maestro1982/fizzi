@@ -17,7 +17,7 @@ export default function Button({
     <PrismicNextLink
       field={buttonLink}
       className={clsx(
-        "rounded-xl bg-orange-600 px-5 py-4 text-center font-bold uppercase tracking-wide text-white transition-colors duration-150 hover:bg-orange-700 md:text-2xl",
+        "rounded-xl bg-[#ef9709] px-5 py-4 text-center font-bold uppercase tracking-wide text-white transition-colors duration-150 hover:bg-[#D68707] md:text-2xl",
         className,
       )}
     >
