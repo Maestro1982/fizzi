@@ -1,9 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-
-import { SodaCan } from "@/components/SodaCan";
-import { Environment } from "@react-three/drei";
+import { View } from "@react-three/drei";
 
 type ViewCanvasProps = {};
 
@@ -26,8 +24,7 @@ export default function ViewCanvas({}: ViewCanvasProps) {
         fov: 30,
       }}
     >
-      <SodaCan />
-      <Environment files="/hdr/lobby.hdr" environmentIntensity={1.5} />
+      <View.Port />
     </Canvas>
   );
 }
