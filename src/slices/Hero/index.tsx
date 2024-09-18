@@ -81,7 +81,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             backgroundColor: "#f2cd5d",
           },
           {
-            backgroundColor: "#A4D7F3",
+            backgroundColor: "#F6BFE4",
             overwrite: "auto",
           },
           1,
