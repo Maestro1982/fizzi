@@ -1,0 +1,31 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Customs"
+						}
+					}
+				]
+			},
+			"price_copy": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laboris tempor tempor nisi mollit sint eiusmod laboris mollit tempor. Minim deserunt exercitation proident. Ullamco nulla tempor anim consequat ipsum nulla nisi dolor occaecat ea officia."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
