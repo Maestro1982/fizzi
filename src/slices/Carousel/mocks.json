@@ -24,6 +24,18 @@
 						}
 					}
 				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "clean",
+				"type": "Text"
 			}
 		},
 		"items": []
