@@ -78,7 +78,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         .fromTo(
           "body",
           {
-            backgroundColor: "#f2cd5d",
+            backgroundColor: "#FEE832",
           },
           {
             backgroundColor: "#F6BFE4",
